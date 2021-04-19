@@ -1,0 +1,173 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2" runat="server">
+        <style type="text/css">
+        .style1
+        {
+            width: 98%;
+            height: 13px;
+            margin-bottom: 0px;
+        }
+        .style13
+        {
+            height: 107px;
+        }
+        .style14
+        {
+            width: 100%;
+            height: 92px;
+        }
+        .style15
+        {
+            height: 59px;
+            width: 253px;
+        }
+        .style16
+        {
+            height: 59px;
+            text-align: center;
+        }
+        .style18
+        {
+            width: 100%;
+            height: 108px;
+        }
+        .style19
+        {
+            width: 1000px;
+            height: 12px;
+            }
+        .style21
+        {
+            height: 12px;
+            text-align: center;
+            }
+        .style23
+        {
+            color: #FFFFFF;
+        }
+        .style24
+        {
+            height: 89px;
+            background-color: #FF0000;
+            text-align: center;
+        }
+        .style25
+        {
+            width: 100%;
+        }
+        .style27
+        {
+            text-align: center;
+            width: 846px;
+            background-color: #00FF00;
+        }
+        .style29
+        {
+            height: 1px;
+            background-color: #FFFFFF;
+        }
+            .style38
+            {
+                width: 5961px;
+                height: 12px;
+                text-align: center;
+            }
+            .style39
+            {
+                font-size: x-large;
+            }
+    </style> </head>
+
+<d><form id="form2" runat="server">
+<table class="style1">
+    <tr>
+        <td class="style13" style="text-align: center; background-color: #0099FF">
+            <table class="style14">
+                <tr>
+                    <td class="style15">
+                        <img src="data/general/Digi_Telecommunications.svg.png" 
+                            style="height: 90px; width: 115px; float: left" /><img 
+                            src="data/general/shopping-2477511_960_720.png" 
+                            style="height: 87px; width: 120px; float: left" /></td>
+                    <td class="style16">
+                        <table class="style18">
+                            <tr>
+                                <td class="style38">
+                                    <strong><span class="style39">
+                                    <br />
+                                    ADMIN CONSOLE</span><br class="style39" />
+                                    </strong>
+                                </td>
+                                <td class="style19">
+                                    <asp:LinkButton ID="LinkButton9" runat="server" PostBackUrl="~/NewAdmin.aspx">New Admin</asp:LinkButton>
+                                </td>
+                                <td class="style21">
+                                    <asp:LinkButton ID="LinkButton12" runat="server" 
+                                        PostBackUrl="~/adminlogin.aspx">Logout</asp:LinkButton>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="style24">
+ 
+
+
+            <table class="style25">
+                <tr>
+                    <td class="style27">
+                        <br />
+                        <strong><em><br class="style23" />
+                        <span class="style23"><br />
+                        </span><br />
+                        </em></strong>
+                        <span class="style23"><strong><em>
+                        <asp:LinkButton ID="LinkButton10" runat="server" PostBackUrl="~/newitem.aspx">Add New Item</asp:LinkButton>
+                        <br />
+                        </em></strong></span><br />
+                        <br />
+                        <strong><em><br class="style23" />
+                        </em></strong>
+                        <br />
+                        </td>
+                    <td class="style27">
+                        <asp:LinkButton ID="LinkButton11" runat="server" 
+                            PostBackUrl="~/deleteitem.aspx" style="font-weight: 700; font-style: italic">Delete item</asp:LinkButton>
+                        </td>
+                    <td class="style27">
+                        <asp:LinkButton ID="LinkButton13" runat="server" PostBackUrl="~/Reportopt.aspx" 
+                            style="font-weight: 700; font-style: italic">Reports</asp:LinkButton>
+                        </td>
+                </tr>
+            </table>
+ 
+
+
+    </tr>
+    <tr>
+        <td class="style29">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+    <tr>
+        <td class="style29">
+            <table class="style25">
+                <tr>
+                    <td class="style23" style="text-align: center; background-color: #0066FF">
+                        &nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</form>
+</html>
